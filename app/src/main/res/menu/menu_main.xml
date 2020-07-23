@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="edu.rosehulman.liua1.jersey.MainActivity">
+    <item android:id="@+id/action_settings"
+          android:title="@string/menu_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never"
+
+    />
+    <!--<item-->
+            <!--android:id="@+id/shortcut"-->
+            <!--app:showAsAction="never"-->
+            <!--android:title="@string/menu_shortcut">-->
+
+    <!--</item>-->
+    <item android:id="@+id/log_out"
+          android:title="@string/log_out"
+          android:orderInCategory="100"
+          app:showAsAction="never"
+
+    />
+
+    <item
+            android:id="@+id/add_friend_menu"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_nav_contacts"
+            android:title="@string/menu_shortcut">
+
+    </item>
+
+    <item
+            android:id="@+id/add_post_menu"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_nav_post"
+            android:title="@string/menu_shortcut">
+
+    </item>
+
+    <item
+            android:id="@+id/show_mine_menu"
+            app:showAsAction="always"
+            android:title="mine">
+
+    </item>
+
+    <item
+            android:id="@+id/show_other_menu"
+            app:showAsAction="always"
+            android:title="others">
+
+    </item>
+
+    <item
+            android:id="@+id/group_msg_menu"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_nav_group"
+            android:title="others">
+
+    </item>
+</menu>

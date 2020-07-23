@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="50"
+            app:counterEnabled="true"
+            android:id="@+id/text_tb"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:hint="Say Something"
+                android:text=""
+                android:layout_marginTop="30dp"
+                android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</RelativeLayout>

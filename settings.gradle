@@ -1,0 +1,1 @@
+include ':app', ':mssql-jdbc-6.2.2.jre8 - Copy', ':jtds-1.3.1'

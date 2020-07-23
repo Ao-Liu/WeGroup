@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+
+>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="130dp"
+              android:id="@+id/login_title"
+              android:text="@string/log_in_to_wegroup"
+              android:textStyle="bold"
+
+              android:layout_centerHorizontal="true"
+              android:textSize="50sp"
+    />
+
+    <TableLayout
+            android:id="@+id/login_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_title">
+
+        <TableRow android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        >
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterMaxLength="20"
+                    app:counterEnabled="true"
+                    android:focusable="true"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_edit_text"
+                        android:layout_width="380dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:hint="@string/login_username"
+                        android:text=""
+                        android:layout_marginTop="30dp"
+                        android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterMaxLength="20"
+                    app:counterEnabled="true"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_edit_text"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:layout_width="380dp"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="10dp"
+                        android:hint="@string/login_password"
+                        android:text=""
+                        android:layout_marginTop="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/password_edit_text"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_width="390dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:hint="@string/login_password"-->
+            <!--android:text=""-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--/>-->
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/login_button"
+            android:text="@string/login_login"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/login_table"
+            android:padding="10dp"
+            android:background="@drawable/my_button"
+    />
+
+
+    <Button
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:id="@+id/register_button"
+            android:text="@string/login_register"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/login_button"
+            android:padding="10dp"
+            android:background="@drawable/my_button"
+    />
+
+
+</RelativeLayout>

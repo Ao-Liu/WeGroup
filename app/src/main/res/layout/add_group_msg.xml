@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="500"
+            app:counterEnabled="true"
+            android:id="@+id/text_tb"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:hint="Something to your friends"
+                android:text=""
+                android:layout_marginTop="30dp"
+                android:inputType="textCapCharacters"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="500"
+            app:counterEnabled="true"
+            android:layout_below="@+id/text_tb"
+            android:id="@+id/fri_tb"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fri_edit_text"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:hint="Add some of your friends"
+                android:text=""
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="30dp"
+          />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_group_to"
+            android:text="Add Receiver"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fri_tb"
+    />
+
+
+</RelativeLayout>

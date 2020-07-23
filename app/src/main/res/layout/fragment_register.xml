@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+
+>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="70dp"
+              android:id="@+id/login_title"
+              android:text="@string/reg_title_tell_us_more_about_you"
+              android:textStyle="bold"
+              android:layout_marginLeft="15dp"
+              android:textSize="30sp"
+    />
+
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/lname_tb"-->
+            <!--app:counterMaxLength="2"-->
+            <!--app:counterEnabled="true"-->
+            <!--android:layout_below="@+id/login_title"-->
+            <!--app:passwordToggleEnabled="true">-->
+
+        <!--<com.google.android.material.textfield.TextInputEditText-->
+                <!--android:id="@+id/lname_edit_text"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textSize="24sp"-->
+                <!--android:layout_width="104dp"-->
+                <!--android:inputType="number"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:hint="Last Name"-->
+                <!--android:text=""-->
+                <!--android:layout_marginTop="20dp"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/fname_tb"-->
+            <!--app:counterMaxLength="2"-->
+            <!--android:layout_below="@id/login_title"-->
+            <!--app:counterEnabled="true"-->
+            <!--android:layout_toRightOf="@+id/lname_tb"-->
+            <!--app:passwordToggleEnabled="true">-->
+
+        <!--<com.google.android.material.textfield.TextInputEditText-->
+                <!--android:id="@+id/fname_edit_text"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textSize="24sp"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:inputType="number"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:hint="First Name"-->
+                <!--android:text=""-->
+                <!--android:layout_marginTop="20dp"/>-->
+
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <TableLayout
+            android:id="@+id/login_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/login_title">
+
+        <TableRow android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        >
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterMaxLength="50"
+                    app:counterEnabled="true"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nickname_edit_text"
+                        android:layout_width="380dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:hint="@string/register_nickname"
+                        android:text=""
+                        android:maxLength="50"
+                        android:layout_marginTop="30dp"
+                        android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+
+
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterMaxLength="50"
+                    app:counterEnabled="true"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_edit_text"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:layout_width="380dp"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Email (optional)"
+                        android:inputType="textEmailAddress"
+                        android:text=""
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </TableRow>
+    </TableLayout>
+
+
+    <!--<TableRow android:layout_width="match_parent"-->
+                  <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dob_year"
+                app:counterMaxLength="4"
+                app:counterEnabled="true"
+                android:layout_below="@+id/login_table"
+                app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/year_edit_text"
+                    android:layout_height="match_parent"
+                    android:textSize="24sp"
+                    android:layout_width="104dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:hint="Year"
+                    android:text=""
+                    android:layout_marginTop="20dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dob_month"
+                    app:counterMaxLength="2"
+                    app:counterEnabled="true"
+                    android:layout_toRightOf="@id/dob_year"
+                    android:layout_below="@+id/login_table"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/month_edit_text"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:layout_width="104dp"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Month"
+                        android:text=""
+                        android:layout_marginTop="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dob_day"
+                    app:counterMaxLength="2"
+                    app:counterEnabled="true"
+                    android:layout_toRightOf="@id/dob_month"
+                    android:layout_below="@+id/login_table"
+                    app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/day_edit_text"
+                        android:layout_height="match_parent"
+                        android:textSize="24sp"
+                        android:layout_width="120dp"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Day"
+                        android:text=""
+                        android:layout_marginTop="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--</TableRow>-->
+
+    <Spinner android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/reg_gender"
+             android:theme="@style/Spinner"
+             style="@style/Widget.AppCompat.Spinner.Underlined"
+             android:spinnerMode="dropdown"
+             android:layout_marginTop="30dp"
+             android:layout_marginHorizontal="20dp"
+             android:layout_below="@id/dob_month"
+             android:entries="@array/gender"
+    />
+
+
+
+    <Button
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/continue_button"
+            android:text="@string/reg_continue"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/reg_gender"
+            android:padding="10dp"
+            android:background="@drawable/my_button"
+    />
+
+
+    <!--<Button-->
+            <!--android:layout_width="390dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:shadowRadius="@android:integer/config_longAnimTime"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textStyle="bold"-->
+            <!--android:id="@+id/register_button"-->
+            <!--android:text="@string/login_register"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_below="@id/login_button"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@drawable/my_button"-->
+    <!--/>-->
+
+
+</RelativeLayout>

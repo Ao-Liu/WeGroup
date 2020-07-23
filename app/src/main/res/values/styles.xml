@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+           <!--android:shape="rectangle">-->
+        <!--<corners-->
+                <!--android:radius="10dip"/>-->
+        <!--<solid-->
+                <!--android:color="#F00" />-->
+        <!--<stroke-->
+                <!--android:width="2dip"-->
+                <!--android:color="#FFF" />-->
+        <!--<padding-->
+                <!--android:left="5dip"-->
+                <!--android:right="5dip"-->
+                <!--android:top="5dip"-->
+                <!--android:bottom="5dip" />-->
+    <!--</shape>-->
+
+
+</resources>
+

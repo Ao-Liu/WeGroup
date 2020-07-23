@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+
+>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/profile_title"
+              android:text="My Profile"
+              android:layout_marginTop="20dp"
+              android:textStyle="bold"
+              android:layout_marginLeft="15dp"
+              android:textSize="30sp"
+    />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/profile_username"
+              android:layout_marginTop="15dp"
+              android:layout_below="@+id/profile_title"
+              android:text="Username"
+              android:textStyle="bold"
+              android:layout_marginLeft="15dp"
+              android:textSize="24sp"
+    />
+
+    <!--nickname-->
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nickname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_username"
+            app:counterMaxLength="50"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="380dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:hint="Nickname"
+                android:text=""
+                android:id="@+id/nickname_et"
+                android:maxLength="50"
+                android:layout_marginTop="30dp"
+                android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--email-->
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_edit_text"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="50"
+            android:layout_below="@+id/nickname_edit_text"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_width="380dp"
+                android:id="@+id/email_et"
+                android:layout_marginLeft="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text=""
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--region-->
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/region_edit_text"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="50"
+            android:layout_below="@+id/email_edit_text"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_width="380dp"
+                android:id="@+id/region_et"
+                android:layout_marginLeft="10dp"
+                android:hint="Region"
+                android:inputType="textEmailAddress"
+                android:text=""
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_year"
+            app:counterMaxLength="4"
+            app:counterEnabled="true"
+            android:layout_below="@+id/region_edit_text"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/year_edit_text"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_width="104dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:hint="Year"
+                android:text=""
+                android:layout_marginTop="20dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_month"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            android:layout_toRightOf="@id/dob_year"
+            android:layout_below="@+id/region_edit_text"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/month_edit_text"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_width="104dp"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:hint="Month"
+                android:text=""
+                android:layout_marginTop="20dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_day"
+            app:counterMaxLength="2"
+            app:counterEnabled="true"
+            android:layout_toRightOf="@id/dob_month"
+            android:layout_below="@+id/region_edit_text"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/day_edit_text"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_width="120dp"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:hint="Day"
+                android:text=""
+                android:layout_marginTop="20dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--spinner-->
+
+    <Spinner android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/prof_gender"
+             android:theme="@style/Spinner"
+             style="@style/Widget.AppCompat.Spinner.Underlined"
+             android:spinnerMode="dropdown"
+             android:layout_marginTop="30dp"
+             android:layout_marginHorizontal="20dp"
+             android:layout_below="@id/dob_month"
+             android:entries="@array/gender"
+    />
+
+
+    <!--des-->
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/des_edit_text"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:counterMaxLength="500"
+            android:layout_below="@+id/prof_gender"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/des_et"
+                android:layout_width="380dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginLeft="10dp"
+                android:hint="Description"
+                android:text=""
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:shadowRadius="@android:integer/config_longAnimTime"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/sc_btn"
+            android:text="Save Change"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/profile_title"
+            android:padding="10dp"
+            android:background="@drawable/my_button"
+    />
+
+
+</RelativeLayout>
